@@ -1,8 +1,36 @@
-url: "https://eddyn.nz"
+#Site metadata
 remote_theme: pages-themes/slate@v0.2.0
 plugins:
 - jekyll-remote-theme 
 title: My homepage
 tagline: Eddyn.nz
 description: Bookmark this to keep an eye on my project updates!
+author: Eddyn Treacher
 google_analytics: G-CX4ZLX9GCB
+
+#Production origin
+url: "https://eddyn.nz"
+
+# Markdown engine. kramdown is Jekyll's default and the only one
+# GitHub Pages supports; don't change it without a reason.
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+
+# Permalink pattern. /:year/:month/:day/:title/ is cleaner than the default
+# and matches what most engineering blogs end up with. (Deep dive in 2.3.)
+permalink: /:year/:month/:day/:title/
+
+# Plugins. The :jekyll_plugins group in Gemfile must also list these.
+plugins:
+  - jekyll-feed       # RSS - Module 4
+  - jekyll-seo-tag    # Title/description/OG tags - Module 4
+  - jekyll-sitemap    # sitemap.xml - Module 4
+
+# Files Jekyll should not copy to _site.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
