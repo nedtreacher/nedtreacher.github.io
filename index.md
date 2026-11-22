@@ -1,5 +1,18 @@
 ---
+#Site metadata
 title: "My homepage"
+description: Bookmark this to keep an eye on my project updates!
+remote_theme: pages-themes/slate@v0.2.0
+plugins:
+- jekyll-remote-theme
+
+# Files Jekyll should not copy to _site.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
 ---
 
 ## Eddyn's site

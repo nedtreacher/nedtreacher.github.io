@@ -1,2 +1,2 @@
-# nedtreacher.github.io
+# Eddyn's site
 My custom website! Work in progress...
